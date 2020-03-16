@@ -1,0 +1,25 @@
+<html>
+
+<head>
+    <title>Finding elements</title>
+</head>
+
+<body>
+    <h1>Finding elements in DOM</h1>
+    <p id="someTest">Find an element by element id</p>
+    <p class="important">Find elements by class name</p>
+    <p>Find elements by tag name</p>
+
+    <p id=1></p>
+    <script>
+        // a JavaScript code here ...
+        var someTest = document.getElementById("someTest");
+        var important = document.getElementsByClassName("important");
+        var all = document.getElementsByTagName("p");
+
+        document.getElementById("1").innerHTML = "by ID is : " + someTest.innerHTML + ". <br>By class iss:" + important[0].innerHTML + ". <br>By tag name first words is : " + all[0].innerHTML;
+        //document.getElementById("1").innerHTML = "by p - " + all[0].innerHTML;
+    </script>
+</body>
+
+</html>

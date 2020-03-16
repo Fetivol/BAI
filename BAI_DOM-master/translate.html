@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Text translation</title>
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<h3 id="1" ">Kije i kamienie kości mi połamią, ale twoje słowa nigdy mnie nie zranią</h3>
+		<script>
+            //element.innerHTML.onmouseout = "Sticks and stones may break my bones, but words will never harm me."
+			// function textPL(element){
+			// 	element.innerHTML = "Kije i kamienie kości mi połamią, ale twoje słowa nigdy mnie nie zranią"
+            // }
+            document.getElementById("1").addEventListener("mouseover", mouseOver);
+            document.getElementById("1").addEventListener("mouseout", mouseOut);
+            function mouseOver(){
+                document.getElementById("1").innerHTML = "Sticks and stones may break my bones, but words will never harm me.";
+            }
+            function mouseOut(){
+                document.getElementById("1").innerHTML = "Kije i kamienie kości mi połamią, ale twoje słowa nigdy mnie nie zranią";
+            }
+		</script>
+	</body>
+</html>
